@@ -4,12 +4,12 @@ import { CardImg } from "reactstrap";
 
 const Books = ({ books }) => {
   return (
-    <div className="card-container" style={{ display: "flex", flexWrap: "wrap" }}>
+    <div className="card-container">
       {books?.map((book) => (
-        <div key={book.id} >
-          <div className="image-container" style={{ maxWidth: 100 }}>
+        <div key={book.id} className="book-card" >
+          <div className="image-container">
           <a target="blank" href={book.volumeInfo.previewLink}>
-            <CardImg
+            <img
               src={book.volumeInfo.imageLinks.thumbnail}
               alt={book.volumeInfo.title}
             />
