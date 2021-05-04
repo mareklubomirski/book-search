@@ -1,6 +1,5 @@
 import React from "react";
 import "./Books.css";
-import { CardImg } from "reactstrap";
 
 const Books = ({ books }) => {
   return (
@@ -20,13 +19,13 @@ const Books = ({ books }) => {
               <h3>{book.volumeInfo.title}</h3>
             </div>
             <div className="card-body">
-              <p>:)</p>
+              {/* <p>:)</p> */}
             </div>
             </div>
             <div className="btn">
               <button>
                 <a href={book.volumeInfo.previewLink}>
-                  Purchase
+                  Find out more
                </a>
               </button>
             </div>

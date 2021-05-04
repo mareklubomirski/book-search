@@ -19,7 +19,7 @@ const App = () => {
   console.log("hasResult", hasResult);
 
   const startIndex = useMemo(() => (currentPage - 1) * PAGE_SIZE, [
-    currentPage
+    currentPage,
   ]);
   console.log("startIndex", startIndex);
 
@@ -28,7 +28,7 @@ const App = () => {
   console.log("totalBooks", totalBooks);
 
   const numberOfPages = useMemo(() => Math.ceil(totalBooks / PAGE_SIZE), [
-    totalBooks
+    totalBooks,
   ]);
   console.log("numberOfPages", numberOfPages);
 
@@ -37,7 +37,7 @@ const App = () => {
 
   const isLastPage = useMemo(() => currentPage * 10 > totalBooks, [
     currentPage,
-    totalBooks
+    totalBooks,
   ]);
   console.log("isLastPage", isLastPage);
 
@@ -95,7 +95,7 @@ const App = () => {
 
   return (
     <div className="main">
-      <div className="d-flex align-items-center flex-column">
+      <div className="search">
         <BookSearch
           handleChange={handleChange}
           handleSubmit={handleSubmit}

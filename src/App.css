@@ -6,4 +6,11 @@ body {
 .main {
   height: 100vh;
   overflow: auto;
+  /* margin: 150px; */
+}
+
+.search {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
 }
