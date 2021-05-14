@@ -1,12 +1,18 @@
 body {
   background: url(https://images.unsplash.com/photo-1614620026694-f5f38182ab9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 .main {
   height: 100vh;
   overflow: auto;
-  /* margin: 150px; */
 }
 
 .search {
